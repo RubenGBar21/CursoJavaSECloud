@@ -12,6 +12,7 @@ public class s002_INIT {
 		
 		pedirDatos(sc);
 		mostrarDatos();
+		sc.close();
 		
 	}
 	
@@ -22,8 +23,6 @@ public class s002_INIT {
 
 		System.out.println("\n¿Cuál es su edad?");
 		edad = sc.nextInt();
-		
-		sc.close();
 		
 	}
 	

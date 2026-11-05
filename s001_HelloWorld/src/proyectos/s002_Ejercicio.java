@@ -15,6 +15,7 @@ public class s002_Ejercicio {
 		
 		pedirNota(sc);
 		haAprobado();
+		sc.close();
 		
 	}
 	
@@ -22,8 +23,6 @@ public class s002_Ejercicio {
 		
 		System.out.println("¿Cuál es la nota del alumnado?");
 		nota = sc.nextInt();
-		
-		sc.close();
 		
 	}
 	

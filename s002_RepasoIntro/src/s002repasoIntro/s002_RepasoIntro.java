@@ -15,6 +15,7 @@ public class s002_RepasoIntro {
 		
 		pedirDatos(sc);
 		mostrarDatos();
+		sc.close();
 		
 	}
 	
@@ -34,8 +35,6 @@ public class s002_RepasoIntro {
 		
 		System.out.println("\n¿Cuál es la nota del alumnado?");
 		nota = sc.nextDouble();
-		
-		sc.close();
 		
 	}
 	

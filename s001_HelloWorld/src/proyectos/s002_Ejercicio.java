@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class s002_Ejercicio {
 	
 	static int nota;
-	static Scanner sc = new Scanner(System.in);;
+	static Scanner sc = new Scanner(System.in);
 	
 	public int getNota() {
 		return nota;
@@ -14,7 +14,7 @@ public class s002_Ejercicio {
 	public static void main(String[] args) {
 		
 		pedirNota(sc);
-		haAprobado(nota);
+		haAprobado();
 		
 	}
 	
@@ -25,7 +25,7 @@ public class s002_Ejercicio {
 		
 	}
 	
-	public static void haAprobado(int nota) {
+	public static void haAprobado() {
 		
 		if (nota >=0 && nota < 5) {
 			

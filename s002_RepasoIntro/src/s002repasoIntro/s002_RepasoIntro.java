@@ -35,6 +35,8 @@ public class s002_RepasoIntro {
 		System.out.println("\n¿Cuál es la nota del alumnado?");
 		nota = sc.nextDouble();
 		
+		sc.close();
+		
 	}
 	
 	public static void mostrarDatos() {

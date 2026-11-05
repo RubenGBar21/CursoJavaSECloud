@@ -23,6 +23,8 @@ public class s002_INIT {
 		System.out.println("\n¿Cuál es su edad?");
 		edad = sc.nextInt();
 		
+		sc.close();
+		
 	}
 	
 	public static void mostrarDatos() {

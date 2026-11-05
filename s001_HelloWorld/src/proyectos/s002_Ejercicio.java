@@ -23,6 +23,8 @@ public class s002_Ejercicio {
 		System.out.println("¿Cuál es la nota del alumnado?");
 		nota = sc.nextInt();
 		
+		sc.close();
+		
 	}
 	
 	public static void haAprobado() {

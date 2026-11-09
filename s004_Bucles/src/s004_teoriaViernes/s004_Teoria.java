@@ -14,7 +14,7 @@ public class s004_Teoria {
 		//ejemploArray();
 		ejemploArray2D();
 		sc.close();
-
+		
 	}
 	
 	public static void ejemploEnum() {

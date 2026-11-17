@@ -23,9 +23,9 @@ public class Teoria {
 		
 		//ifLambda();
 		
-		//ejemploRutas();
+		ejemploRutas();
 		
-		ejemploLectura();
+		//ejemploLectura();
 		
 	}
 

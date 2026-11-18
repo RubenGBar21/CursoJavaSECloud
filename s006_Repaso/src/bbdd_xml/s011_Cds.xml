@@ -1,0 +1,23 @@
+<Discos>
+	<Disco id="1">
+		<NombreArtista>Ska-P</NombreArtista>
+		<NombreDisco>Vals del obrero</NombreDisco>
+		<AnioLanzamiento>1996</AnioLanzamiento>
+		<Nacionalidad>España</Nacionalidad>
+	</Disco>
+	
+	<Disco id="2">
+		<NombreArtista>Mitski</NombreArtista>
+		<NombreDisco>Bury Me at Makeout Creek</NombreDisco>
+		<AnioLanzamiento>2014</AnioLanzamiento>
+		<Nacionalidad>EE.UU.</Nacionalidad>
+	</Disco>
+	
+	<Disco id="3">
+		<NombreArtista>Extremoduro</NombreArtista>
+		<NombreDisco>Tú en tu casa, nosotros en la hoguera</NombreDisco>
+		<AnioLanzamiento>1989</AnioLanzamiento>
+		<Nacionalidad>España</Nacionalidad>
+	</Disco>
+
+</Discos>

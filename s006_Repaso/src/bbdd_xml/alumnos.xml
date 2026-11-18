@@ -1,0 +1,33 @@
+<Alumnos>
+	<Alumno id="1">
+		<Nombre>Pepe</Nombre>
+		<Apellidos>Viyuela Castillo</Apellidos>
+		<Ciudad>Madrid</Ciudad>
+		<Curso>3º Artes Escenicas</Curso>
+		<Nota>6</Nota>
+	</Alumno>
+
+	<Alumno id="2">
+		<Nombre>Maria</Nombre>
+		<Apellidos>Milan Arcos</Apellidos>
+		<Ciudad>Sevilla</Ciudad>
+		<Curso>4º Ingenieria Informatica</Curso>
+		<Nota>9</Nota>
+	</Alumno>
+	
+	<Alumno id="3">
+		<Nombre>Manuek</Nombre>
+		<Apellidos>Perez Sanchez</Apellidos>
+		<Ciudad>Sevilla</Ciudad>
+		<Curso>2º DAM</Curso>
+		<Nota>7</Nota>
+	</Alumno>
+	
+	<Alumno id="4">
+		<Nombre>Gonzalo</Nombre>
+		<Apellidos>Bolas Gonzalez</Apellidos>
+		<Ciudad>Sevilla</Ciudad>
+		<Curso>2º FP de Cocina</Curso>
+		<Nota>10</Nota>
+	</Alumno>
+</Alumnos>

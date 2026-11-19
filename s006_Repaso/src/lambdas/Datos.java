@@ -34,7 +34,6 @@ public class Datos {
 		System.out.println("¿Cuál es su sugerencia o queja?");
 		sugerencia = sc.nextLine();
 		
-		
 		try (BufferedWriter bw = Files.newBufferedWriter(ruta)) {
 		    
 			bw.write("Sugerencias de: " + nombre + " " + apellidos);
@@ -46,7 +45,13 @@ public class Datos {
 		    bw.close();
 		    
 		} catch (IOException e) {
+			
 		    System.err.println("Error al escribir en el archivo: " + e);
+		    
+		} finally {
+			
+			sc.close();
+			
 		}
 	}
 	

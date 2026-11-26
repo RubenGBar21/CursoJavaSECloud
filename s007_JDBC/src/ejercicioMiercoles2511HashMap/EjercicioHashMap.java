@@ -8,9 +8,13 @@ public class EjercicioHashMap {
 
 	public static void main(String[] args) {
 		
-		//ejemploAlumnos();
-		ejemploInventario();
+		ejemploAlumnos();
+		//ejemploInventario();
+		//ejemploDiccionario();
 		
+	}
+
+	public static void ejemploDiccionario() {
 		HashMap<String, String> diccionario = new HashMap<>();
 		Scanner sc = new Scanner(System.in);
 		String palabra = "";
@@ -48,7 +52,7 @@ public class EjercicioHashMap {
 		
 		diccionario.put(palabra, traduccion);
 		
-		
+		sc.close();
 	}
 
 	public static void ejemploInventario() {
@@ -81,12 +85,16 @@ public class EjercicioHashMap {
 
 	public static void ejemploAlumnos() {
 		HashMap<String, Double> alumnos = new HashMap<>(); 
+		Scanner sc = new Scanner(System.in);
+		double nota = 0;
+		String alumnoBuscar = "";
 		
-		alumnos.put("Antonio", 8.5);
-		alumnos.put("Maria", 9.0);
-		alumnos.put("Pedro", 6.5);
-		alumnos.put("Lucia", 7.5);
-		alumnos.put("Carlos", 5.0);
+		
+		alumnos.put("Ana", 8.5);
+		alumnos.put("Carlos", 6.0);
+		alumnos.put("Maria", 9.2);
+		alumnos.put("Pedro", 4.5);
+		alumnos.put("Laura", 7.8);
 		
 		System.out.println("LISTADO DE ALUMNOS");
 		
@@ -96,11 +104,41 @@ public class EjercicioHashMap {
 			
 		}
 		
-		System.out.println("\nNota de Maria: " + alumnos.get("Maria"));
+		System.out.println("¿De que alumno quieres ver la nota?");
+		alumnoBuscar = sc.nextLine();
 		
-		System.out.println(alumnos.containsKey("Antonio") ? "Existe el alumno" : "No existe el alumno");
+		System.out.println("\nNota de María: " + alumnos.get(alumnoBuscar));
+		
+		System.out.println("¿De que alumno quieres cambiar la nota?");
+		alumnoBuscar = sc.nextLine();
+		
+		System.out.println("Introduce la nueva nota del alumno");
+		nota = sc.nextDouble();
+		
+		alumnos.replace(alumnoBuscar, nota);
+		
+		sc.nextLine();
+		System.out.println("¿Que alumno quieres ver si está aprobado?");
+		alumnoBuscar = sc.nextLine();
+		
+		System.out.println(alumnos.get(alumnoBuscar) >= 5 ? "Aprobado" : "Suspenso");
+		
+		System.out.println("¿Que alumno quieres eliminar?");
+		alumnoBuscar = sc.nextLine();
+		
+		alumnos.remove(alumnoBuscar);
 		
 		System.out.println("Total alumnos: " + alumnos.size());
+		
+		System.out.println("\nLISTADO DE ALUMNOS MODIFICADA");
+		
+		for(Map.Entry<String, Double> alumno: alumnos.entrySet()) {
+			
+			System.out.println(alumno.getKey() + " - " + alumno.getValue());
+			
+		}
+		
+		sc.close();
 	}
 	
 }

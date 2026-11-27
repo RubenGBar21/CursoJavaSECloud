@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.1">
+
+	<persistence-unit name="miUnidad">
+
+		<class>com.informatica2.Alumno</class>
+
+		<properties>
+
+			<!-- 
+            <property
+                name="jakarta.persistence.jdbc.driver"
+                value="com.mysql.cj.jdbc.Driver"/>
+
+            <property
+                name="jakarta.persistence.jdbc.url"
+                value="jdbc:mysql://localhost:3306/instituto"/>
+
+            <property
+                name="jakarta.persistence.jdbc.user"
+                value="root"/>
+
+            <property
+                name="jakarta.persistence.jdbc.password"
+                value="1234567"/>
+
+            <property
+                name="hibernate.hbm2ddl.auto"
+                value="none"/>
+
+            <property
+                name="hibernate.show_sql"
+                value="true"/>
+
+ -->
+
+
+			<property name="jakarta.persistence.jdbc.driver"
+				value="org.mariadb.jdbc.Driver" />
+
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mariadb://localhost:3307/instituto" />
+
+			<property name="jakarta.persistence.jdbc.user"
+				value="root" />
+
+			<property name="jakarta.persistence.jdbc.password"
+				value=" " />
+
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MariaDBDialect" />
+
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
